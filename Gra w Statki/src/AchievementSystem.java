@@ -17,7 +17,7 @@ public class AchievementSystem implements Observer {
             playerHits.put(shooterName, currentHits);
 
             if (currentHits == 3) {
-                System.out.println("\n>>> ⭐ OSIĄGNIĘCIE ODBLOKOWANE dla gracza " + shooterName + ": Snajper (3 celne strzały) ⭐ <<<");
+                System.out.println("\n>>>  OSIĄGNIĘCIE ODBLOKOWANE dla gracza " + shooterName + ": Snajper (3 celne strzały)  <<<");
             }
 
             if (currentHits == 10) {

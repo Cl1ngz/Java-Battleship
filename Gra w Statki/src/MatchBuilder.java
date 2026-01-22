@@ -31,8 +31,6 @@ public class MatchBuilder {
 
         GameEngine engine = GameEngine.getInstance();
 
-        engine.addObserver(new StatsLogger());
-        engine.addObserver(new AchievementSystem());
         engine.configureMatch(p1, p2);
         engine.startGame();
     }
