@@ -1,10 +1,20 @@
 import java.util.Random;
 
 public class RandomStrategy implements ShootingStrategy {
-    private Random rand = new Random();
+    private final Random rand = new Random();
 
     @Override
     public Point determineShot(Board enemyBoard) {
-        return new Point(rand.nextInt(enemyBoard.getSize()), rand.nextInt(enemyBoard.getSize()));
+        int size = enemyBoard.getSize();
+
+        while (true) {
+            int x = rand.nextInt(size);
+            int y = rand.nextInt(size);
+            Cell cell = enemyBoard.getCell(x, y);
+
+            if (cell.status != CellStatus.HIT && cell.status != CellStatus.MISS) {
+                return new Point(x, y);
+            }
+        }
     }
 }
