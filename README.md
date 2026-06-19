@@ -1,5 +1,7 @@
-# Dokumentacja Projektowa: Battleship Commander (Gra w Statki)
+# Old Coputer Sience Repo for java basic
+## No longer maintained or used
 
+## Dokumentacja Projektowa: Battleship Commander (Gra w Statki)
 ## 1. Opis Projektu
 
 Celem projektu było stworzenie silnika gry w statki (Battleship) w architekturze konsolowej, z naciskiem na modularność, rozszerzalność i wykorzystanie sprawdzonych wzorców projektowych.
